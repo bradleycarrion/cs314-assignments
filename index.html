@@ -4,42 +4,174 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Description Here">
-        <title>Template for CPSC 314</title>
+        <title>Weekly Calendar</title>
     </head>
 
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
+
     <body>
+      <img src="./background.jpeg" style="z-index: -1; position: fixed; top: 0; left: 0; opacity: 0.4;">
+
       <section>
-      	<header>
+        <header style="text-align: center;">
           <h1>This is my weekly calendar</h1>
         </header>
 
+        <!-- Weekly Goals -->
         <p>My goals for this week:</p>
-
-        <ul>
+        <ol>
           <li>Finish all of my grading by Sunday</li>
           <li>Finish all of my tasks for Senior Design</li>
+          <li>Finish Chapter 1 of my portfolio for Abtract Algebra</li>
           <li>...</li>
-        </ul>
+        </ol>
 
-        <table>
+        <!-- Calendar -->
+        <table style="text-align: center;">
+
+          <header>
+            <h1>Spring 2018</h1>
+          </header>
+
           <tr>
             <th style="min-width: 100px;"></th>
-            <th style="min-width: 100px;">Sunday</th>
-            <th style="min-width: 100px;">Monday</th>
-            <th style="min-width: 100px;">Tuesday</th>
-            <th style="min-width: 100px;">Wednesday</th>
-            <th style="min-width: 100px;">Thursday</th>
-            <th style="min-width: 100px;">Friday</th>
-            <th style="min-width: 100px;">Saturday</th>
+            <th style="min-width: 150px;">Sunday</th>
+            <th style="min-width: 150px;">Monday</th>
+            <th style="min-width: 150px;">Tuesday</th>
+            <th style="min-width: 150px;">Wednesday</th>
+            <th style="min-width: 150px;">Thursday</th>
+            <th style="min-width: 150px;">Friday</th>
+            <th style="min-width: 150px;">Saturday</th>
           </tr>
 
+          <tr style="height: 100px;">
+            <th>9:00 am</th>
+            <td></td>
+            <td></td>
+            <td>Abstract Algebra</td>
+            <td></td>
+            <td>Abstract Algebra</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>10:00 am</th>
+            <td></td>
+            <td>Team Meeting</td>
+            <td>Machine Learning</td>
+            <td>Team Meeting</td>
+            <td>Machine Learning</td>
+            <td>Team Meeting</td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>11:00 am</th>
+            <td></td>
+            <td>Lab Time</td>
+            <td></td>
+            <td>Lab Time</td>
+            <td></td>
+            <td>Lab Time</td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>12:00 pm</th>
+            <td></td>
+            <td>Lab Time</td>
+            <td>Symbolic Logic</td>
+            <td>Take care of Moose</td>
+            <td>Symbolic Logic</td>
+            <td>Lab Time</td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>1:00 pm</th>
+            <td></td>
+            <td>Lab Time</td>
+            <td></td>
+            <td>Rock Climbing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>2:00 pm</th>
+            <td></td>
+            <td>Lab Time</td>
+            <td></td>
+            <td>Rock Climbing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>3:00 pm</th>
+            <td></td>
+            <td></td>
+            <td>Rock Climbing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>4:00 pm</th>
+            <td></td>
+            <td></td>
+            <td>Rock Climbing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>5:00 pm</th>
+            <td></td>
+            <td></td>
+            <td>Web Development</td>
+            <td></td>
+            <td>Web Development</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr style="height: 100px;">
+            <th>6:00 pm</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Meeting with Riley</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <footer>
+              <!-- TODO: Implement previous and next links -->
+              <th><a href="https://www.google.com">Previous</a></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="https://www.google.com">Next</a></td>
+            </footer>
+          </tr>
         </table>
-
-
-
-
-
       </section>
-
     </body>
 </html>
