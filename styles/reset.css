@@ -48,17 +48,16 @@ table {
 }
 
 @font-face {
-    font-family: 'poiret_oneregular';
-    src: url('../fonts/poiretone-regular-webfont.eot');
-    src: url('../fonts/poiretone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/poiretone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/poiretone-regular-webfont.woff') format('woff');
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html {
-  font-family: poiret_oneregular;
+  font-family: robotoregular;
 	font-size: 16px;
 }

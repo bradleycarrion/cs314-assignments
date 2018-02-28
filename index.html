@@ -6,11 +6,64 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="Description Here">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
-        <title>Template for CPSC 314</title>
+        <title>Personal Questionnaire</title>
     </head>
 
     <body>
+      <header class="header"></header>
+
+      <section class="form-container">
+        <form name="questionnaire" class="questionnaire">
+            <h1>Hello.</h1>
+
+            <label>
+              Name: <input type="text" name="name" placeholder="Your Full Name"/>
+            </label>
+
+            <label>
+              Gender: <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
+            </label>
+
+            <label>
+              Favorite Movie: <input type="text" name="movie" placeholder="Your Favorite Movie"/>
+            </label>
+
+            <label>
+              Joke: <textarea name="joke" placeholder="Write your best joke!"></textarea>
+            </label>
+
+            <label>
+              Myers-Briggs Personality Type:
+            </label>
+            <div class="myers-briggs">
+              <label><input type="radio" name="mb" value="INFP"> INFP</label>
+              <label><input type="radio" name="mb" value="INFJ"> INFJ</label>
+              <label><input type="radio" name="mb" value="INTP"> INTP</label>
+              <label><input type="radio" name="mb" value="INTJ"> INTJ</label>
+              <label><input type="radio" name="mb" value="ISFP"> ISFP</label>
+              <label><input type="radio" name="mb" value="ISFJ"> ISFJ</label>
+              <label><input type="radio" name="mb" value="ISTP"> ISTP</label>
+              <label><input type="radio" name="mb" value="ISTJ"> ISTJ</label>
+              <label><input type="radio" name="mb" value="ENFP"> ENFP</label>
+              <label><input type="radio" name="mb" value="ENFJ"> ENFJ</label>
+              <label><input type="radio" name="mb" value="ENTP"> ENTP</label>
+              <label><input type="radio" name="mb" value="ENTJ"> ENTJ</label>
+              <label><input type="radio" name="mb" value="ESFP"> ESFP</label>
+              <label><input type="radio" name="mb" value="ESFJ"> ESFJ</label>
+              <label><input type="radio" name="mb" value="ESTP"> ESTP</label>
+              <label><input type="radio" name="mb" value="ESTJ"> ESTJ</label>
+              <label><input type="radio" name="mb" value="ESTJ"> Unsure</label>
+            </div>
+
+            <input type="submit" value="Submit"/>
+        <form>
+      </section>
 
     </body>
 </html>
