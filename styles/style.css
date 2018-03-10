@@ -1,0 +1,357 @@
+.scrolling-image-container {
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.homepage-background {
+  position: absolute;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-bottom: 25px solid rgba(33, 37, 43, 1);
+}
+
+.photo-background {
+  background-image: url('../images/gallery-images/IMG_6492.png');
+  opacity: 0.7;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.photo-background:hover {
+  opacity: 0.5;
+}
+
+.professional-background {
+  background-image: url('../images/gallery-images/hardwork.png');
+  opacity: 0.7;
+  top: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.professional-background:hover {
+  opacity: 0.5;
+}
+
+.family-background {
+  background-image: url('../images/gallery-images/IMG_1431.png');
+  opacity: 0.7;
+  top: 200%;
+  transition: all 0.3s ease-in-out;
+}
+
+.family-background:hover {
+  opacity: 0.5;
+}
+
+.introduction {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(33, 37, 43, 1);
+  color: white;
+  top: 50px;
+}
+
+.introduction h1 {
+  position: relative;
+  width: 500px;
+  text-align: center;
+  font-size: 2.5em;
+  box-sizing: border-box;
+  padding: 0px 30px 0px;
+  margin: 0px auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  height: 51px;
+  background-color: rgba(33, 37, 43, 1);
+  color: white;
+  font-size: 1.5em;
+}
+
+.navigation a {
+  position: relative;
+  top: 25%;
+  padding: 0px 20px 0px;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+  cursor: pointer;
+  color: rgba(101, 107, 118, 1);
+  transform: scale(1.5);
+}
+
+#ilovephotography {
+  position: relative;
+  font-size: 4em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#iworkhard {
+  position: relative;
+  font-size: 4em;
+  top: 140%;
+  transform: translateY(-50%);
+}
+
+#ilovemyfamily {
+  position: relative;
+  font-size: 4em;
+  top: 230%;
+  transform: translateY(-50%);
+}
+
+.copywrite-footer {
+  position: fixed;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: white;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(33, 37, 43, 1);
+}
+
+.work-history {
+  position: relative;
+  font-size: 1.5em;
+  top: 51px;
+}
+
+.work-history h1 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.work-location {
+  width: 100%;
+  height: 200px;
+}
+
+.work-location h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.copywrite-footer p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 30px;
+}
+
+.connection-outlets {
+  height: 100%;
+  width: 200px;
+  right: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  position: relative;
+  height: 0px;
+  text-align: left;
+}
+
+.contact-form input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 2;
+  margin: 10px 0px 10px;
+  border: none;
+  border-bottom: 1px solid rgba(33, 37, 43, 1);
+  border-radius: 0px;
+}
+
+.contact-form input, select {
+  width: 100%;
+  margin: 10px 0px 40px;
+  height: 35px;
+}
+
+.contact-form input::placeholder {
+  color: rgba(244, 123, 33, 0.6);
+}
+
+.contact-form input:focus {
+  border:1px solid rgba(33, 37, 43, 1);
+  box-shadow:0 0 3px rgba(33, 37, 43, 1);
+  -moz-box-shadow:0 0 3px rgba(33, 37, 43, 1);
+  -webkit-box-shadow:0 0 3px rgba(33, 37, 43, 1);
+}
+
+.contact-form input[type="submit"] {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.25em;
+  margin: 40px 0px 30px;
+  background-color: rgba(33, 37, 43, 1);
+}
+
+.contact-form input[type="submit"]:hover {
+  width: 240px;
+  cursor: pointer;
+  transition:  0.1s;
+  transition-timing-function: ease-in;
+}
+
+.contact-form {
+  position: relative;
+  top: 51px;
+  height: 400px;
+  padding: 50px;
+}
+
+
+.contact-form select {
+  position: relative;
+  box-sizing: border-box;
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #C2C2C2;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+}
+
+*:focus {
+    outline: none;
+}
+
+.linkedin {
+  width: 50px;
+  height: 50px;
+  background-image: url('../social-icons/linkedin.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.facebook {
+  width: 50px;
+  height: 50px;
+  background-image: url('../social-icons/facebook.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.instagram {
+  width: 50px;
+  height: 50px;
+  background-image: url('../social-icons/instagram.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.github {
+  width: 50px;
+  height: 50px;
+  background-image: url('../social-icons/github-logo.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media all and (max-width: 768px) {
+  .homepage-background {
+    height: 60%;
+    heigth: 60%;
+  }
+
+  .navigation a {
+    font-size: 0.8em;
+    padding: 0px 5px 0px;
+  }
+
+  .introduction h1 {
+    font-size: 1.5em;
+    width: 320px;
+  }
+
+  .professional-background {
+    top: 60%;
+  }
+
+  .family-background {
+    top: 120%;
+  }
+
+  .contact-background {
+    top: 180%;
+  }
+
+  #ilovephotography {
+    top: 25%;
+  }
+
+  #iworkhard {
+    top: 80%
+  }
+
+  #ilovemyfamily {
+    top: 130%;
+  }
+
+  .work-location {
+    margin: 70px 0px 70px;
+    height: 250px;
+  }
+
+  .connection-outlets {
+    position: static;
+    width: 100%;
+    height: 60px;
+  }
+
+  .copywrite-footer p {
+    position: relative;
+    transform: translateY(30%);
+    width: 100%;
+    height: 30px;
+    top: 0;
+  }
+
+  .copywrite-footer {
+    display: inline;
+    height: 90px;
+  }
+
+  .contact-form {
+    width: 75%;
+  }
+}

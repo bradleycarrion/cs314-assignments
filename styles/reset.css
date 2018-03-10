@@ -49,16 +49,73 @@ table {
 
 @font-face {
     font-family: 'poiret_oneregular';
-    src: url('../fonts/poiretone-regular-webfont.eot');
-    src: url('../fonts/poiretone-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/poiretone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/poiretone-regular-webfont.woff') format('woff');
+    src: url('../fonts/poiretone/poiretone-regular-webfont.eot');
+    src: url('../fonts/poiretone/poiretone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poiretone/poiretone-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poiretone/poiretone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'karla-regular';
+    src: url('../fonts/karla/karla-regular-webfont.eot');
+    src: url('../fonts/karla/karla-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karla/karla-regular-webfont.woff2') format('woff2'),
+         url('../fonts/karla/karla-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karla-bold';
+    src: url('../fonts/karla-bold/karla-bold-webfont.eot');
+    src: url('../fonts/karla-bold/karla-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karla-bold/karla-bold-webfont.woff2') format('woff2'),
+         url('../fonts/karla-bold/karla-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karla-bolditalic';
+    src: url('../fonts/karla-bolditalic/karla-bolditalic-webfont.eot');
+    src: url('../fonts/karla-bolditalic/karla-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karla-bolditalic/karla-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/karla-bolditalic/karla-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karla-italic';
+    src: url('../fonts/karla-italic/karla-italic-webfont.eot');
+    src: url('../fonts/karla-italic/karla-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/karla-italic/karla-italic-webfont.woff2') format('woff2'),
+         url('../fonts/karla-italic/karla-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pacifico-regular';
+    src: url('../fonts/pacifico/pacifico-regular-webfont.eot');
+    src: url('../fonts/pacifico/pacifico-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pacifico/pacifico-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico/pacifico-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
   font-family: poiret_oneregular;
 	font-size: 16px;
+}
+
+*:active {
+	outline: none;
+}
+
+* {
+	text-decoration: none;
 }
