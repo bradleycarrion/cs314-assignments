@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('fonts/raleway-regular-webfont.eot');
+  src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('fonts/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-family: 'ralewayregular', Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  padding: 50px 0;
+}
+
+.inner-content {
+  position: relative;
+}
+
+.dark-bg {
+  background-color: lightgray;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 0 10px;
+}
+
+li {
+  padding: 3px 0;
+}
+

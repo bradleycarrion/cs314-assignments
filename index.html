@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="Description Here">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/style.css">
-        <title>Template for CPSC 314</title>
-    </head>
-
-    <body>
-
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS in the Browser</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assignment-styles.css">
+  </head>
+  <body>
+    <section id="selection">
+      <div class="inner-content">
+        <p>Select the number that you want to scroll to:</p>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+      </div>
+    </section>
+    <section class="dark-bg" id="1">
+      <div class="inner-content">
+        <p>1. Pick a background color:</p>
+        <button>Blue</button>
+        <button>Green</button>
+      </div>
+    </section>
+    <section id="2">
+      <div class="inner-content">
+        <p>2. Click the button to change between a pink and orange background:</p>
+        <p>The text on the button will represent the color the user will get.</p>
+        <button>Click for pink!</button>
+      </div>
+    </section>
+    <section class="dark-bg" id="3">
+      <div class="inner-content">
+        <p>3. Input text to add to the list below</p>
+        <input type="text">
+        <button>Submit</button>
+        <ul>
+          <li>One</li>
+          <li>Green</li>
+        </ul>
+      </div>
+    </section>
+    <section id="4">
+      <div class="inner-content">
+        <p>4. If an item is clicked, remove it from the list.</p>
+        <ul>
+          <li>Bob</li>
+          <li>Tim</li>
+          <li>Jack</li>
+          <li>Sam</li>
+        </ul>
+      </div>
+    </section>
+    <section class="dark-bg" id="5">
+      <div class="inner-content">
+        <p>5. If an item is clicked, select it (highlight it) and de-select everything else.</p>
+        <p>This doesn't have to be pretty.</p>
+        <p>Just change the background color of the selected item with a class.</p>
+        <ul>
+          <li>Bob</li>
+          <li>Tim</li>
+          <li>Jack</li>
+          <li>Sam</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+  <script src="js/index.js"></script>
 </html>
