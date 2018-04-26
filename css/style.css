@@ -59,6 +59,11 @@
   width: 100%;
 }
 
+.album-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .todo-item {
   position: relative;
   margin: 5px 30px 5px;

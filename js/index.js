@@ -18,6 +18,22 @@ let createAndPopulateTodosList = (todos, uid, container) => {
 }
 
 /**
+  *   Adds all the albums to the user model and generates the
+  *   appropriate html elements to represent the list
+  */
+let createAndPopulateAlbumsList = (albums, uid, container) => {
+  users[uid].albums.data = [];
+
+  albums.forEach((album) => {
+    users[uid].albums.data.push(album);
+    let albumEl  = document.createElement("div");
+    albumEl.innerHTML = album.title;
+    albumEl.classList.add("todo-item");
+    $(`#album-container-${uid}`).append(albumEl);
+  })
+}
+
+/**
   *   Returns a user element as a div with the required fields as
   *   chile elements of the parent div
   *
@@ -57,6 +73,7 @@ let generateUser = (info) => {
   todoContainer.classList.add("todo-container");
   todoContainer.id = `todo-container-${uid}`;
   albumContainer.classList.add("album-container");
+  albumContainer.id = `album-container-${uid}`;
 
   // set up button actions
   buttonContainer.classList.add("button-container");
@@ -74,6 +91,11 @@ let generateUser = (info) => {
 
     users[uid].todos.visible = true;
     $(todoButton).text("Hide Todos");
+    if (users[uid].albums.visible) {
+      $(albumButton).text("Show Albums");
+      $(albumContainer).slideToggle();
+      users[uid].albums.visible = false;
+    }
 
     // fetch data if undefined
     if (users[uid].todos.data === undefined) {
@@ -100,6 +122,11 @@ let generateUser = (info) => {
       return;
     }
 
+    if (users[uid].todos.visible) {
+      $(todoButton).text("Show Todo");
+      $(todoContainer).slideToggle();
+      users[uid].todos.visible = false;
+    }
     users[uid].albums.visible = true;
     $(albumButton).text("Hide Albums");
 
@@ -107,10 +134,9 @@ let generateUser = (info) => {
     if (users[uid].albums.data === undefined) {
       $.get(`https://jsonplaceholder.typicode.com/albums?userId=${uid}`)
        .done((data) => {
-         console.log(data);
-         //$(todoContainer).slideToggle();
-         //createAndPopulateTodosList(data, uid, todoContainer);
-         //$(todoContainer).slideToggle();
+         $(albumContainer).slideToggle();
+         createAndPopulateAlbumsList(data, uid, albumContainer);
+         $(albumContainer).slideToggle();
        })
        .fail(() => { });
     } else {
