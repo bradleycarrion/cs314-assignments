@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
         <script src="js/jquery-3.3.1.js"></script>
+        <script src="node_modules/oauthio-web/dist/oauth.js"></script>
         <title>Search Twitter</title>
     </head>
     <body>
@@ -21,14 +22,15 @@
       <section class="search">
         <label>@</label>
         <input id="searchbox" type="text" placeholder="yourhandle"/>
-        <div class="button-container">
-          <input type="button" value="Explore"/>
-          <input type="button" value="Search"/>
-        </div>
-        <section class="search-results">
+        <input id="searchbutton" type="button" value="Search"/>
+        <section id="searchresults" class="search-results">
 
         </section>
       </section>
+
+      <footer class="footer">
+        <p>Created by Bradley Carrion</p>
+      </footer>
     </body>
     <script src="js/index.js"></script>
 </html>
