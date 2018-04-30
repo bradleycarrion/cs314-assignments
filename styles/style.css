@@ -2,18 +2,28 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, rgba(0, 158, 250, 1.0), rgba(133, 47, 203, 1.0));
+/*  background: linear-gradient(90deg, rgba(0, 158, 250, 1.0), rgba(133, 47, 203, 1.0));*/
+background-color: rgba(0, 158, 250, 1.0);
   z-index: -1;
 }
 
+#particles-js canvas {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
 .page-header {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-  z-index: 1;
+  /* background: linear-gradient(90deg, rgba(0, 158, 250, 1.0), rgba(133, 47, 203, 1.0));*/
+  background-color: rgba(0, 158, 250, 1.0);
+  z-index: 101;
 }
 
 .page-header h1 {
@@ -42,6 +52,7 @@
   height: 120px;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
+  z-index: 101;
 }
 
 #searchbox {
@@ -115,7 +126,6 @@
 }
 
 .search-result-item:hover {
-  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
 

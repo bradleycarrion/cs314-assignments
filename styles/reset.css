@@ -63,6 +63,35 @@ html {
 	font-size: 16px;
 }
 
+* {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                	supported by Chrome and Opera */
+}
+
+input {
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+}
+
 *:focus {
     outline: none;
+}
+
+a {
+		color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+     text-decoration:none;
+     cursor:pointer;
 }

@@ -1,5 +1,10 @@
 'use strict';
 
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '../assets/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 let twitter;
 
 OAuth.initialize('DWqzdHVXcBZ2UooaurfWXqMdWUE')
@@ -18,7 +23,7 @@ let generateSearchResults = (results) => {
   $('#searchresults').html('');
 
   results.forEach((result) => {
-    let resultEl = document.createElement('div');
+    let resultEl = document.createElement('a');
     let name     = document.createElement('h1');
     let handle   = document.createElement('p');
 
@@ -27,6 +32,7 @@ let generateSearchResults = (results) => {
 
     $(resultEl).append(name);
     $(resultEl).append(handle);
+    $(resultEl).attr('href', `http://localhost:8080/dashboard.html?id=${result.id}&name=${result.screen_name}`);
 
     resultEl.classList.add('search-result-item');
     $('#searchresults').append(resultEl);
@@ -42,5 +48,7 @@ $('#searchbox').keyup((event) => {
   twitter.get(endpoints.searchUsers(`?q=${event.target.value}&count=10`))
          .done((response) => {
            generateSearchResults(response);
+         }).fail((err) => {
+           console.log(err);
          });
 });
