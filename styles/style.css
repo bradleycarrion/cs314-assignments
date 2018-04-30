@@ -1,0 +1,98 @@
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 158, 250, 1.0);
+  z-index: -1;
+}
+
+.page-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.page-header h1 {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+.page-header i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+  color: white;
+  font-size: 2em;
+}
+
+.search {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 500px;
+  height: 100px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+}
+
+#searchbox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 25px;
+  font-size: 1.2em;
+  border: none;
+  padding: 2px 15px 2px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+.button-container input {
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: rgba(0, 158, 250, 1.0);
+  font-size: 1em;
+  color: white;
+  margin: 0px 10px 0px;
+}
+
+.button-container input:hover {
+  color: rgba(0, 158, 250, 1.0);
+  background-color: white;
+  cursor: pointer;
+}
+
+.search label {
+  position: fixed;
+  font-size: 2em;
+  color: white;
+  transform: translateX(-120%);
+}
+
+.search-results {
+  position:fixed;
+  top: 41px;
+  background-color: white;
+  box-shadow: 1px black;
+  z-index: 50;
+  height: 100px;
+  width: 500px;
+}

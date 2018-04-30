@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="Description Here">
+        <meta name="description" content="Find your twitter handle to be able to see updates">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
-        <title>Template for CPSC 314</title>
+        <script src="js/jquery-3.3.1.js"></script>
+        <title>Search Twitter</title>
     </head>
-
     <body>
+      <div class="background"></div>
+      <header class="page-header">
+        <i class="fab fa-twitter"></i>
+        <h1>Explore Twitter</h1>
+      </header>
 
+      <section class="search">
+        <label>@</label>
+        <input id="searchbox" type="text" placeholder="yourhandle"/>
+        <div class="button-container">
+          <input type="button" value="Explore"/>
+          <input type="button" value="Search"/>
+        </div>
+        <section class="search-results">
+
+        </section>
+      </section>
     </body>
+    <script src="js/index.js"></script>
 </html>
