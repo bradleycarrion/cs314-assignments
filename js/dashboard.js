@@ -13,7 +13,8 @@ let oauthComplete = (twitter) => {
 
   let nextCursor = -1;
 
-  for (let i = 0; i < 3; i++) {
+  // get the first 5 batches
+  for (let i = 0; i < 5; i++) {
     twitter.get(endpoints.getFollowers(`?user_id=${user_id}&cursor=${nextCursor}`))
            .done((response) => {
              // increment cursor
@@ -23,10 +24,22 @@ let oauthComplete = (twitter) => {
                if (follower.location.length <= 4) return;  // arbitrary length
                $.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${follower.location}&key=AIzaSyBGknL0dqalbRZLBJs5U2Vaf0QnLe_Mv08`).done((data) => {
                  let pos = data.results[0].geometry.location;
+
+                 var contentString = `Name: ${follower.name} <br> @${user_name}`;
+
+                 var infowindow = new google.maps.InfoWindow({
+                   content: contentString
+                 });
+
                  let marker = new google.maps.Marker({
                    position: pos,
                    map: map,
-                   icon: getCircle()
+                   label: follower.user_name,
+                   animation: google.maps.Animation.DROP
+                 });
+
+                 marker.addListener('click', function() {
+                   infowindow.open(map, marker);
                  });
                });
              });

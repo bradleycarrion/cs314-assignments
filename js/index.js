@@ -27,8 +27,9 @@ let generateSearchResults = (results) => {
     let name     = document.createElement('h1');
     let handle   = document.createElement('p');
 
+
     handle.innerHTML = `@ ${result.screen_name}`;
-    name.innerHTML = result.name;
+    name.innerHTML   = result.name;
 
     $(resultEl).append(name);
     $(resultEl).append(handle);
@@ -41,6 +42,7 @@ let generateSearchResults = (results) => {
 
 $('#searchbox').keyup((event) => {
   if (event.target.value === '') {
+    $('#searchresults').slideToggle();
     generateSearchResults([]);
     return;
   }
@@ -48,6 +50,9 @@ $('#searchbox').keyup((event) => {
   twitter.get(endpoints.searchUsers(`?q=${event.target.value}&count=10`))
          .done((response) => {
            generateSearchResults(response);
+            if ($('#searchresults').is(":hidden")) {
+              $('#searchresults').slideToggle();
+            }
          }).fail((err) => {
            console.log(err);
          });
