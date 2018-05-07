@@ -25,7 +25,7 @@ let oauthComplete = (twitter) => {
                $.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${follower.location}&key=AIzaSyBGknL0dqalbRZLBJs5U2Vaf0QnLe_Mv08`).done((data) => {
                  let pos = data.results[0].geometry.location;
 
-                 var contentString = `Name: ${follower.name} <br> @${user_name}`;
+                 var contentString = `Name: ${follower.name} <br> @${follower.screen_name}`;
 
                  var infowindow = new google.maps.InfoWindow({
                    content: contentString
